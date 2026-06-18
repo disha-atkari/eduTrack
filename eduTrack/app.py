@@ -298,7 +298,7 @@ def home():
 @app.route("/login", methods=["GET","POST"])
 def login():
     if request.method == "POST":
-        if request.form["username"]=="admin" and request.form["password"]=="admin123":
+        if request.form["username"]=="disha" and request.form["password"]=="disha":
             session["user"]="admin"
             return redirect("/")
     return LOGIN_HTML
